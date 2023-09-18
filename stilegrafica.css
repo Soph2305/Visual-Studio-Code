@@ -1,0 +1,180 @@
+/* BODY */
+body {
+    font-family: 'Courier New', Courier, monospace margin: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDE574;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+header #site-logo {
+    display: inline-block;
+    flex: 0 0 300px
+        /* _background-color: brown; */
+}
+
+#site-logo {
+    flex: 0 0 300px;
+}
+
+header #site-logo img {
+    width: 180px;
+    height: 130px;
+}
+
+header .site-title {
+    display: inline-block;
+}
+
+header .site-title .title-box {
+    background: rgb(252, 251, 247);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+header .site-title span {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(0, 1, 54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    border-radius: 30px;
+    white-space: pre;
+}
+
+header #main-menu {
+    flex: 0 0 300px;
+}
+
+header #main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+header #main-menu ul li {
+    padding-left: 15px;
+}
+
+
+header #main-menu ul li a {
+    color: rgb(0, 1, 54);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    white-space: pre;
+    transition: all 0, 2s ease-in-out;
+}
+
+header #main-menu ul li a:hover {
+    color: rgb(0, 1, 54);
+    font-size: 110%;
+    border: 1px solid rgb(0, 1, 54);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* MAIN */
+main .hero {
+    background-image: url(https://i.pinimg.com/564x/8d/98/cb/8d98cb4e992f7880daf9abf68b0e3aed.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main .hero::before {
+    content: "";
+    background-color: rgb(0 0 0 / 13%);
+    ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+main .hero h1 {
+    text-align: left;
+    font-size: 60px;
+    margin: 0;
+    color: rgb(0, 1, 54);
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    margin-bottom: 0;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%, 0)
+}
+
+main section.articoli-in-evidenza {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+
+main section.articoli-in-evidenza .articolo-wrp {
+    flex: 0 0 50%;
+}
+
+main section.articoli-in-evidenza .articolo-wrp article {
+    padding: 40px;
+    height: 100%;
+}
+
+main section.articoli-in-evidenza .articolo-wrp article .img-articolo {
+    background-image: url("https://www.ptgroupsalute.it/wp-content/uploads/2015/03/Assistenza-Viaggi-come-si-affronta-un-imprevisto.jpg");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+main section.articoli-in-evidenza .articolo-wrp article .img-articolo-new img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    ;
+}
+
+main section.articoli-in-evidenza .articolo-wrp article .content {
+    padding: 20px;
+    background-color: rgb(255, 250, 250);
+    height: 100%;
+}
+
+main section.nuovi-articoli .terzo-articolo-wrp article .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+
+main section.nuovi-articoli .terzo-articolo-wrp article .content .img-terzo-articolo {
+    padding: 20px;
+    background-color: rgb(255, 250, 250);
+
+}
+
+main section.nuovi-articoli .terzo-articolo-wrp article .content .img-terzo-articolo img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+main section.nuovi-articoli .terzo-articolo-wrp article .content .testo-terzo-articolo {
+    padding: 20px;
+    background-color: rgb(255, 250, 250);
+}
